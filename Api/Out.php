@@ -8,10 +8,14 @@
 namespace Themis\Api;
 class Out
 {
-    const  ERROR_PARAMS_ERROR = 101; //参数错误
+    const ERROR_PARAMS_ERROR = 101; //参数错误
+    const ERROR_GET_ID_FAIL = 102; //获取ID信息失败
+
+    const ERROR_DIFF_PASSWORD = 201; //两次密码不一致
 
     public static $ERROR_MSG_MAP = array(
         self::ERROR_PARAMS_ERROR => '参数错误',
+        self::ERROR_DIFF_PASSWORD => '两次密码不一致',
     );
 
     /**
