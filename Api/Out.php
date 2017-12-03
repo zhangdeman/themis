@@ -10,6 +10,7 @@ class Out
 {
     const ERROR_PARAMS_ERROR = 101; //参数错误
     const ERROR_GET_ID_FAIL = 102; //获取ID信息失败
+    const ERROR_EXCEPTION_TOKEN = 103;  //token校验失败
 
     const ERROR_DIFF_PASSWORD = 201; //两次密码不一致
     const ERROR_NIL_ACCOUNT =   202;    //用户不存在
@@ -18,6 +19,8 @@ class Out
 
     public static $ERROR_MSG_MAP = array(
         self::ERROR_PARAMS_ERROR => '参数错误',
+        self::ERROR_GET_ID_FAIL =>  '获取ID信息失败',
+        self::ERROR_EXCEPTION_TOKEN =>  'token校验失败',
         self::ERROR_DIFF_PASSWORD => '两次密码不一致',
         self::ERROR_NIL_ACCOUNT =>  '用户不存在',
         self::ERROR_ADMIN_ACCOUNT_EXCEPTION =>  '账号异常',
