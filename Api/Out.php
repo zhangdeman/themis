@@ -20,8 +20,9 @@ class Out
     const ERROR_EMPTY_KIND_DETAIL = 206; //类别不存在
     const ERROR_UPDATE_KIND_FAIL = 207; //更新类别失败
     const ERROR_DELETE_KIND_FAIL = 208; //更新类别失败
+    const ERROR_ADD_PERMISSION_FAIL = 209;  //添加权限失败
 
-    const ERROR_ADD_ARTICLE_KIND_FAIL = 210;
+    const ERROR_ADD_ARTICLE_KIND_FAIL = 210;    //添加类别失败
 
     public static $ERROR_MSG_MAP = array(
         self::ERROR_PARAMS_ERROR => '参数错误',
@@ -35,6 +36,7 @@ class Out
         self::ERROR_ADD_ARTICLE_KIND_FAIL   =>  '文章类别添加失败',
         self::ERROR_UPDATE_KIND_FAIL    =>  '更新类别失败',
         self::ERROR_DELETE_KIND_FAIL    =>  '删除类别失败',
+        self::ERROR_ADD_PERMISSION_FAIL =>  '添加权限失败',
     );
 
     /**
